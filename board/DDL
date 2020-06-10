@@ -1,0 +1,14 @@
+create database Board;
+
+use Board;
+
+create table region_board(
+id int(100) auto_increment,
+name varchar(20) not null,
+mail varchar(30) not null,
+time_contribute varchar(50) not null,
+time_edit varchar(50),
+content varchar(500),
+app_file varchar(300),
+primary key(id)
+);
