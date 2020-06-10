@@ -124,17 +124,17 @@ $('#actionform').submit(function(){
 		alert('入力エラー   ※すべての項目を入力してください');
 		return false;
 	}
-	/*else if(file.match(/.elsx/) || file.match(/.docx/) || file.match(/.pdf/) || file.match(/.ppt/) || file.match(/.pptx/) || file.match(/.png/) || file.match(/.jpg/)){
+	else if(!(file.match(/.elsx/) || file.match(/.docx/) || file.match(/.pdf/) || file.match(/.ppt/) || file.match(/.pptx/) || file.match(/.png/) || file.match(/.jpg/)) && !(file.equals(""))){
 
 		alert('入力エラー   ※選択されたファイルはアップロードできません');
 		return false;
 
-	}*/
-	else if(!(~file.indexOf(".elsx") || ~file.indexOf(".docx") || ~file.indexOf(".pdf") || ~file.indexOf(".ppt")|| ~file.indexOf(".pptx")|| ~file.indexOf(".png")|| ~file.indexOf(".jpg"))){
-
-		alert('入力エラー   ※選択されたファイルはアップロードできません');
-		return false;
 	}
+	/*else if(!(~file.indexOf(".elsx") || ~file.indexOf(".docx") || ~file.indexOf(".pdf") || ~file.indexOf(".ppt")|| ~file.indexOf(".pptx")|| ~file.indexOf(".png")|| ~file.indexOf(".jpg"))){
+
+		alert('入力エラー   ※選択されたファイルはアップロードできません');
+		return false;
+	}*/
 
 
 	else{
